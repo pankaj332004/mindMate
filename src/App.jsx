@@ -5,6 +5,7 @@ import Landing from './pages/Landing';
 import Chat from './pages/Chat';
 import MoodTracker from './pages/MoodTracker';
 import Resources from './pages/Resources';
+import SOSButton from './components/SOSButton';
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
                 <Route path="/resources" element={<Resources />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
+            <SOSButton />
         </BrowserRouter>
     );
 }
