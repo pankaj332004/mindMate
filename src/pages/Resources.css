@@ -1,0 +1,223 @@
+/* Resources Page Styles */
+.resources-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.resources-header {
+    text-align: center;
+}
+
+/* Helplines Grid */
+.helplines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.helpline-card {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+.helpline-card__accent {
+    height: 4px;
+    background: var(--hline-color);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    opacity: 0.8;
+}
+
+.helpline-card__body {
+    padding: 22px 24px 24px;
+}
+
+.helpline-card__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.helpline-card__name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: var(--clr-text);
+}
+
+.helpline-card__org {
+    font-size: 0.78rem;
+    color: var(--clr-text-muted);
+    margin-top: 2px;
+}
+
+.helpline-card__hours {
+    font-size: 0.72rem;
+    color: var(--hline-color);
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    white-space: nowrap;
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--hline-color) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--hline-color) 25%, transparent);
+}
+
+.helpline-card__desc {
+    font-size: 0.88rem;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.helpline-card__actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.helpline-btn {
+    font-size: 0.85rem;
+    padding: 8px 18px;
+}
+
+/* Breathing */
+.breathing-box {
+    overflow: hidden;
+    padding: 0;
+}
+
+.breathing-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 22px 24px;
+    background: none;
+    border: none;
+    color: var(--clr-text);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.breathing-toggle:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.breathing-toggle__left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.breathing-toggle__title {
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+.breathing-toggle__sub {
+    font-size: 0.82rem;
+    color: var(--clr-text-muted);
+}
+
+.breathing-steps {
+    padding: 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    animation: fadeInUp 0.3s ease;
+}
+
+.breathing-step {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--step-color) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--step-color) 20%, transparent);
+}
+
+.breathing-step__emoji {
+    font-size: 1.5rem;
+}
+
+.breathing-step__label {
+    font-weight: 700;
+    font-family: 'Nunito';
+    font-size: 0.95rem;
+    color: var(--step-color);
+}
+
+.breathing-step__dur {
+    font-size: 0.8rem;
+    color: var(--clr-text-dim);
+}
+
+.breathing-tip {
+    font-size: 0.85rem;
+    color: var(--clr-text-muted);
+    padding: 10px 0 0;
+    font-style: italic;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.tip-card {
+    padding: 24px;
+    cursor: default;
+}
+
+.tip-card__emoji {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.tip-card__title {
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: var(--clr-text);
+    margin-bottom: 8px;
+}
+
+.tip-card__desc {
+    font-size: 0.87rem;
+    line-height: 1.65;
+}
+
+/* Bottom reminder */
+.resources-reminder {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    background: rgba(244, 114, 182, 0.06);
+    border-color: rgba(244, 114, 182, 0.15);
+}
+
+.resources-reminder h3 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+.resources-reminder p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .resources-reminder {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

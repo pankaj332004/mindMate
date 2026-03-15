@@ -1,0 +1,204 @@
+/* MoodTracker Styles */
+.mood-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.mood-header {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.mood-header p {
+    max-width: 500px;
+    margin: 10px auto 0;
+}
+
+/* Picker Card */
+.mood-picker-card {
+    padding: 32px;
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mood-emojis {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mood-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
+    padding: 16px 14px;
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 80px;
+    flex: 1;
+    max-width: 110px;
+}
+
+.mood-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--mood-color);
+    transform: translateY(-3px);
+}
+
+.mood-btn--active {
+    background: color-mix(in srgb, var(--mood-color) 15%, transparent);
+    border-color: var(--mood-color);
+    box-shadow: 0 0 16px color-mix(in srgb, var(--mood-color) 40%, transparent);
+    transform: translateY(-4px);
+}
+
+.mood-btn__emoji {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.mood-btn__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    color: var(--clr-text-muted);
+}
+
+.mood-btn--active .mood-btn__label {
+    color: var(--mood-color);
+}
+
+.mood-note {
+    max-height: 80px;
+}
+
+.mood-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.mood-actions .btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.mood-saved-msg {
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Stats */
+.mood-stats {
+    display: flex;
+    gap: 16px;
+    margin: 32px auto;
+    max-width: 680px;
+    flex-wrap: wrap;
+}
+
+.mood-stat-card {
+    flex: 1;
+    min-width: 160px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.mood-stat-value {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--clr-text);
+}
+
+.mood-stat-label {
+    font-size: 0.78rem;
+    color: var(--clr-text-muted);
+}
+
+/* History */
+.mood-history {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.mood-log-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mood-log-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px 20px;
+    gap: 16px;
+    border-left: 3px solid var(--mood-color);
+    border-radius: var(--radius-md);
+}
+
+.mood-log-item__left {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.mood-log-item__emoji {
+    font-size: 1.8rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.mood-log-item__label {
+    font-weight: 700;
+    font-family: 'Nunito';
+    font-size: 0.95rem;
+    color: var(--clr-text);
+}
+
+.mood-log-item__date {
+    font-size: 0.78rem;
+    color: var(--clr-text-dim);
+    margin-top: 2px;
+}
+
+.mood-log-item__note {
+    font-size: 0.82rem;
+    color: var(--clr-text-muted);
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.mood-delete-btn {
+    background: none;
+    border: none;
+    color: var(--clr-text-dim);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.mood-delete-btn:hover {
+    color: #f87171;
+    background: rgba(248, 113, 113, 0.1);
+}
+
+.mood-empty {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--clr-text-dim);
+}
