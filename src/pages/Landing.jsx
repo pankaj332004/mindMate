@@ -64,7 +64,7 @@ export default function Landing() {
                     <div className="hero__badge fade-in">
                         <span className="tag tag-purple">
                             <Sparkles size={12} />
-                            Hackathon 2025 · PS1 – Youth Mental Wellness
+                            AI-Powered Mental Wellness
                         </span>
                     </div>
 
